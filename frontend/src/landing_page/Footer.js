@@ -10,48 +10,48 @@ function Footer() {
             <p>&copy; 2010 - 2026, Zerodha Broking Ltd. <br /> All rights reserved.</p>
           </div>
           <div className='col'>
-            <p>Company</p>
-            <a href=''>About</a> <br />
-            <a href=''>Philosophy</a> <br />
-            <a href=''>Press & media</a> <br />
-            <a href=''>Careers</a> <br />
-            <a href=''>Zerodha Cares (CSR)</a> <br />
-            <a href=''>Zerodha.tech</a> <br />
-            <a href=''>Open source</a> <br />
-            <a href=''>Referral program</a> <br />
+            <p className="fw-bold">Company</p>
+            <a href='' className='text-muted text-decoration-none'>About</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Philosophy</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Press & media</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Careers</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Zerodha Cares (CSR)</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Zerodha.tech</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Open source</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Referral program</a> <br />
           </div>
           <div className='col'>
-            <p>Support</p>
-            <a href=''>Contact us</a> <br />
-            <a href=''>Support portal</a> <br />
-            <a href=''>How to file a complaint?</a> <br />
-            <a href=''>Status of your complaints</a> <br />
-            <a href=''>Bulletin</a> <br />
-            <a href=''>Circular</a> <br />
-            <a href=''>Z-Connect blog</a> <br />
-            <a href=''>Downloads</a> <br />
+            <p className="fw-bold">Support</p>
+            <a href='' className='text-muted text-decoration-none'>Contact us</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Support portal</a> <br />
+            <a href='' className='text-muted text-decoration-none'>How to file a complaint?</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Status of your complaints</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Bulletin</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Circular</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Z-Connect blog</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Downloads</a> <br />
           </div>
           <div className='col'>
-            <p>Account</p>
-            <a href=''>Open demat account</a> <br />
-            <a href=''>Minor demat account</a> <br />
-            <a href=''>NRI demat account</a> <br />
-            <a href=''>HUF demat account</a> <br />
-            <a href=''>Commodity</a> <br />
-            <a href=''>Dematerialisation</a> <br />
-            <a href=''>Fund transfer</a> <br />
-            <a href=''>MFT</a> <br />
+            <p className="fw-bold">Account</p>
+            <a href='' className='text-muted text-decoration-none'>Open demat account</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Minor demat account</a> <br />
+            <a href='' className='text-muted text-decoration-none'>NRI demat account</a> <br />
+            <a href='' className='text-muted text-decoration-none'>HUF demat account</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Commodity</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Dematerialisation</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Fund transfer</a> <br />
+            <a href='' className='text-muted text-decoration-none'>MFT</a> <br />
           </div>
           <div className='col'>
-            <p>Quick Links</p>
-            <a href=''>Upcomming IPOs</a> <br />
-            <a href=''>Brokerage charges</a> <br />
-            <a href=''>Market holidays</a> <br />
-            <a href=''>Economic calendar</a> <br />
-            <a href=''>Calculators</a> <br />
-            <a href=''>Markets</a> <br />
-            <a href=''>Sectors</a> <br />
-            <a href=''>Gift Nifty</a> <br />
+            <p className="fw-bold">Quick Links</p>
+            <a href='' className='text-muted text-decoration-none'>Upcomming IPOs</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Brokerage charges</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Market holidays</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Economic calendar</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Calculators</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Markets</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Sectors</a> <br />
+            <a href='' className='text-muted text-decoration-none'>Gift Nifty</a> <br />
           </div>
         </div>
         <div className='mt-5 text-muted' style={{ fontSize: "13px" }}>
