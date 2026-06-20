@@ -2,7 +2,7 @@ import React from 'react'
 
 function LeftSection({ imageURL, productName, productDescription, tryDemo, learnMore, googlePlay, appStore, Coin, hideLinks, }) {
   return (
-    <div className='container mt-5'>
+    <div className='container mt-3'>
       <div className='row'>
         <div className='col-6'>
           <img src={imageURL} />
