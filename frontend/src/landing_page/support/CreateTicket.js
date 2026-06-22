@@ -3,7 +3,7 @@ import React from 'react'
 function CreateTicket() {
   return ( 
     <div className='container'>
-      <div className='row'>
+      <div className='row mt-5'>
         <h2>To create a ticket, select a relevent topic</h2>
         
         <div className='col-4 p-5 mt-5'>
