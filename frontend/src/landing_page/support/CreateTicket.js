@@ -43,7 +43,7 @@ function CreateTicket() {
       <div className='row'>
         
         <div className='col-4 p-5'>
-          <h3 className='mb-4 fs-4'> <i class="fa-solid fa-circle-plus "></i> Funds</h3>
+          <h3 className='mb-4 fs-4'> <i class="fa-solid fa-wallet"></i> Funds</h3>
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Adding Funds</a><br />
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Fund Withdrawal</a><br />
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>eMandates</a><br />
@@ -51,7 +51,7 @@ function CreateTicket() {
         </div>
 
         <div className='col-4 p-5'>
-          <h3 className='mb-4 fs-4'> <i class="fa-solid fa-user"></i> Console</h3>
+          <h3 className='mb-4 fs-4'> <i class="fa-solid fa-record-vinyl"></i> Console</h3>
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Reports</a><br />
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Ledger</a><br />
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Portfolio</a><br />
@@ -61,7 +61,7 @@ function CreateTicket() {
         </div>
 
         <div className='col-4 p-5'>
-          <h3 className='mb-4 fs-4'> <i class="fa-solid fa-chart-column"></i> Coin</h3>
+          <h3 className='mb-4 fs-4'> <i class="fa-regular fa-circle-dot"></i> Coin</h3>
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Understanding Mutual Funds</a><br />
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>About Coin</a><br />
           <a href='' style={{textDecoration: "none", lineHeight: "2", fontSize: "16px"}}>Buying and Selling through Coin</a><br />

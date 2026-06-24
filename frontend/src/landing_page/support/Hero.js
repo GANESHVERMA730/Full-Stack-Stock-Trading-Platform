@@ -11,7 +11,7 @@ function Hero() {
       <div className='row' id="supportWrapper">
         <div className='col-6 p-5 '>
           <h1 className='fs-4'>Search for an answer or browser help topics to create a ticket</h1>
-          <input className='mt-3 mb-3' placeholder='Eg: how can i activate F&O, why is my order getting rejected.' /> <br />
+          <input id='search' className='mt-3 mb-3' placeholder='Eg: how can i activate F&O, why is my order getting rejected.' /> <br />
           <a href=''>Track account opening</a>
           <a href=''>Track segment activation</a><br />
           <a href=''>Industry margins</a>
