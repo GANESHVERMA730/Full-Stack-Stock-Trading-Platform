@@ -194,17 +194,107 @@ app.get('/allPositions', async (req, res) => {
   res.json(allPositions);
 });
 
+app.get("/allOrders", async (req, res) => {
+  const allOrders = await OrdersModel.find({});
+  res.json(allOrders);
+});
+
 app.post('/newOrder', async (req, res) => {
-  let newOrder = new OrdersModel({
-    name: req.body.name,
-    qty: req.body.qty,
-    price: req.body.price,
-    mode: req.body.mode,
-  });
 
-  newOrder.save();
+  // BUY ORDER
+  if (req.body.mode === "BUY") {
 
-  res.send("Order Saved");
+    let newOrder = new OrdersModel({
+      name: req.body.name,
+      qty: req.body.qty,
+      price: req.body.price,
+      mode: req.body.mode,
+    });
+
+    await newOrder.save();
+
+    // check if holding already exists
+    let existingHolding = await HoldingsModel.findOne({
+      name: req.body.name,
+    });
+
+    // if stock already exists -> increase qty
+    if (existingHolding) {
+
+      existingHolding.qty += Number(req.body.qty);
+
+      await existingHolding.save();
+
+    } 
+    
+    // if stock does not exist -> create new holding
+    else {
+
+      let newHolding = new HoldingsModel({
+        name: req.body.name,
+        qty: req.body.qty,
+        avg: req.body.price,
+        price: req.body.price,
+        net: "0%",
+        day: "0%",
+      });
+
+      await newHolding.save();
+    }
+
+    res.send("Buy Order Saved");
+  }
+
+
+
+  // SELL ORDER
+  else if (req.body.mode === "SELL") {
+
+    let holding = await HoldingsModel.findOne({
+      name: req.body.name,
+    });
+
+    // stock not found
+    if (!holding) {
+      return res.send("Stock not found");
+    }
+
+    // qty validation
+    if (req.body.qty > holding.qty) {
+      return res.send("Not enough quantity");
+    }
+
+    // reduce qty
+    holding.qty -= Number(req.body.qty);
+
+    // if qty becomes 0 -> delete holding
+    if (holding.qty === 0) {
+
+      await HoldingsModel.deleteOne({
+        name: req.body.name,
+      });
+
+    } 
+    
+    else {
+
+      await holding.save();
+
+    }
+
+    // save sell order
+    let newOrder = new OrdersModel({
+      name: req.body.name,
+      qty: req.body.qty,
+      price: req.body.price,
+      mode: "SELL",
+    });
+
+    await newOrder.save();
+
+    res.send("Sell Order Saved");
+  }
+
 });
 
 app.listen(PORT, () => {
